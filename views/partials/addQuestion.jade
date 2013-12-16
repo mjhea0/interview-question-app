@@ -1,0 +1,20 @@
+.row
+    .col-md-4
+    .col-md-4
+        h1 Ask Your Question
+        form(name="form")
+            .form-group
+                label(for="title") Title
+                input#title.form-control(type="text", name="title", placeholder="Add a title", ng-model="question.title", required)
+                div(ng-show="form.title.$dirty && form.title.$invalid")
+                    span(ng-show="form.title.$error.required") Title is mandatory
+            .form-group
+                label(for="content") Content
+                textarea#content.form-control(rows="10", name="content", ng-model="question.content", required)
+                div(ng-show="form.content.$dirty && form.content.$invalid")
+                    span(ng-show="form.content.$error.required") Content is mandatory
+            .form-group
+                label(for="tags") Tags
+                input#tags.form-control(type="text", placeholder="Comma separated tags", ng-model="question.tags")
+            button.btn.btn-lg.btn-primary(ng-click="addQuestion(question)", ng-disabled="form.$invalid") Submit
+    .col-md-4

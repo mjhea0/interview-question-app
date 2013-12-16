@@ -1,0 +1,25 @@
+.container
+    .container
+        h1 {{question.title}}
+        a.tag(href='/users/{{user.id}}') By {{user.name}}
+
+    .container
+        p {{question.content}}
+
+    .container
+        span(ng-repeat="tag in question.tags")
+            a.tag(href='/questions/tagged/{{tag}}') {{tag}}
+
+    .container(ng-show="answers.length > 0")
+        h2 Answers
+        .container(ng-repeat="answer in answers")
+            p {{answer.content}}
+    .container(ng-show="answers.length == 0")
+        h2 No answers yet
+
+    .container(ng-show="loggedInUser")
+        h2 Post your answer
+        form(name="form")
+            .form-group
+                textarea#content.form-control(rows="10", ng-model="answer.content", required)
+            button.btn.btn-lg.btn-primary(ng-click="addAnswer(answer)", ng-disabled="form.$invalid") Submit

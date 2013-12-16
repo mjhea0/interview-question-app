@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+a.tag {
+  margin-right: 10px;
+}
+
+input.ng-invalid.ng-dirty {
+	background-color: #FA787E;
+}
+
+textarea.ng-invalid.ng-dirty {
+	background-color: #FA787E;
+}
