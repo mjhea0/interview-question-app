@@ -1,4 +1,4 @@
-angular.module('heapOverflow.controllers', ['heapOverflow.services'])
+angular.module('interviewApp.controllers', ['interviewApp.services'])
 	.controller('IndexCtrl', function IndexCtrl($scope) {
 
 	})

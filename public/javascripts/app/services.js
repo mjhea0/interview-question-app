@@ -1,4 +1,4 @@
-angular.module('heapOverflow.services', [])
+angular.module('interviewApp.services', [])
 	.factory('authenticationFactory', function($http, $location, $rootScope) {
 		return {
 			login: function (username, password, callback) {

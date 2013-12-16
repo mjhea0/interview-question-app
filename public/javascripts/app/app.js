@@ -1,9 +1,9 @@
 angular.module('interviewApp', [
 	'ngRoute', 
-	'heapOverflow.services',
-	'heapOverflow.controllers',
-	'heapOverflow.filters',
-	'heapOverflow.directives'
+	'interviewApp.services',
+	'interviewApp.controllers',
+	'interviewApp.filters',
+	'interviewApp.directives'
 ])
 .config(['$routeProvider', '$locationProvider', '$httpProvider', function($routeProvider, $locationProvider, $httpProvider) {
 

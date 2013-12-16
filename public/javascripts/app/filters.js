@@ -1,4 +1,4 @@
-angular.module('heapOverflow.filters', [])
+angular.module('interviewApp.filters', [])
 	.filter('limit', function(){
 		return function(text, limit){
 			if (text.length <= limit)

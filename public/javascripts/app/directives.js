@@ -1,4 +1,4 @@
-angular.module('heapOverflow.directives', [])
+angular.module('interviewApp.directives', [])
 	.directive('question', function(){
 		return {
 			restrict: 'E',
