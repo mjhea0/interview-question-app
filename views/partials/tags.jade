@@ -1,3 +1,4 @@
 h1 Choose a category
+	br
 	.container(ng-repeat="tag in tags")
 		a.lead(href='/questions/tagged/{{tag}}') {{tag}}
