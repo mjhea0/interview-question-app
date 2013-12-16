@@ -16,9 +16,7 @@ html(ng-app="interviewApp")
         .navbar-collapse.collapse
           ul.nav.navbar-nav
             li
-              a(href="/questions/") Questions
-            li
-              a(href="/tags/") Tags
+              a(href="/tags/") View Questions
             li
               a(href="/addQuestion", ng-show="loggedInUser") Add a Question
           ul.nav.navbar-nav.navbar-right
@@ -28,6 +26,8 @@ html(ng-app="interviewApp")
               a(href="/login", ng-hide="loggedInUser") Log In
             li
               a(href="/signup", ng-hide="loggedInUser") Sign Up
+            li
+              a(href="/logout", ng-show="loggedInUser") Log Out
     div(ng-view)
   script(src='/javascripts/lib/angular/angular.js')
   script(src='/javascripts/lib/angular/angular-route.js')

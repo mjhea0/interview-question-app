@@ -14,4 +14,5 @@ exports.login = function (req, res) {
 exports.logout = function (req, res) {
 	req.logout();
 	res.send(200);
+	res.redirect('pong');
 };
